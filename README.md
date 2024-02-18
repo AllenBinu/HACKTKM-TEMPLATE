@@ -1,24 +1,27 @@
 ![image](HACK4TKM.jpeg)
 
 
-# {Project Name} - HACK4TKM
-Tell us about your project here
+# SophoTheque - HACK4TKM
+Sophotheque which  means smart storage unit is a storage unit that detects detects the ripeness, presence of pests, time for ripening with the help of Vision modules. Complimentary to that to detect the infections inside we use Methane, Carbon Dioxide and Ethylene to detect the ripeness.
 
 ## Team Members
-[1.Team Member 1](enter_github_id_here)   
-[2.Team Member 2](enter_github_id_here)   
-[3.Team Member 3](enter_github_id_here)   
-[4.Team Member 4](enter_github_id_here)   
+1. Allen Binu (AllenBinu)   
+2. Silda Sholly (SildaSholly)  
+3. Nandana V S (NandanaVS)  
+4. Adwaith Raj (adw-ith) 
 
 ## Link to Project
 [Embed the live link of project](live_link)
 
 ## How it Works ?
-Explaining the working of project  
-Embed video of project demo
+Our smart stoarge units detects the ripeness, presence of pests, time for ripening with the help of Vision modules. Complimentary to that to detect the infections inside we use Methane, Carbon Dioxide and Ethylene to detect the ripeness.
 
 ## Technologies used
-List out tech stacks you have used
+Arduino IDE
+React
+NestJs
+RestAPI
+teachable machine with Google (for machine learning)
 
 ## How to configure
 Instructions for setting up project
