@@ -5,10 +5,10 @@
 Sophotheque which  means smart storage unit is a storage unit that detects detects the ripeness, presence of pests, time for ripening with the help of Vision modules. Complimentary to that to detect the infections inside we use Methane, Carbon Dioxide and Ethylene to detect the ripeness.
 
 ## Team Members
-1. Allen Binu (AllenBinu)   
-2. Silda Sholly (SildaSholly)  
-3. Nandana V S (NandanaVS)  
-4. Adwaith Raj (adw-ith) 
+1. Allen Binu [github.com/AllenBinu] 
+2. Silda Sholly [github.com/SildaSholly] 
+3. Nandana V S [github.com/NandanaVS]
+4. Adwaith Raj [github.com/adw-ith] 
 
 ## Link to Project
 [Embed the live link of project](live_link)
