@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Apple",
+      "ethylene": 0.5,
+      "CO2": 3.2,
+      "methane": 0.1
+    },
+    {
+      "name": "Banana",
+      "ethylene": 1.2,
+      "CO2": 2.5,
+      "methane": 0.2
+    },
+    {
+      "name": "Orange",
+      "ethylene": 0.8,
+      "CO2": 2.9,
+      "methane": 0.15
+    },
+    {
+      "name": "Grapes",
+      "ethylene": 0.4,
+      "CO2": 3.5,
+      "methane": 0.05
+    },
+    {
+      "name": "Strawberry",
+      "ethylene": 0.3,
+      "CO2": 3.8,
+      "methane": 0.03
+    },
+    {
+      "name": "Pineapple",
+      "ethylene": 0.7,
+      "CO2": 2.8,
+      "methane": 0.1
+    },
+    {
+      "name": "Watermelon",
+      "ethylene": 0.6,
+      "CO2": 3.0,
+      "methane": 0.08
+    },
+    {
+      "name": "Kiwi",
+      "ethylene": 0.9,
+      "CO2": 3.1,
+      "methane": 0.12
+    },
+    {
+      "name": "Mango",
+      "ethylene": 0.8,
+      "CO2": 2.7,
+      "methane": 0.14
+    },
+    {
+      "name": "Peach",
+      "ethylene": 0.6,
+      "CO2": 2.9,
+      "methane": 0.1
+    }
+  ]
+  
