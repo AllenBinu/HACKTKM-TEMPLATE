@@ -6,9 +6,9 @@ Sophotheque which  means smart storage unit is a storage unit that detects detec
 
 ## Team Members
 [1. Allen Binu ](github.com/AllenBinu) 
-2. Silda Sholly [github.com/SildaSholly] 
-3. Nandana V S [github.com/NandanaVS]
-4. Adwaith Raj [github.com/adw-ith] 
+[2. Silda Sholly ](github.com/SildaSholly)
+[3. Nandana VS ](github.com/NandanaVS)
+[4. Adwaith Raj ](github.com/adw-ith)
 
 ## Link to Project
 [Embed the live link of project](live_link)
