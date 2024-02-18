@@ -1,0 +1,17 @@
+[
+    { "date": "1 Mar 24", "events": ["Project Kickoff Meeting", "Team Training Session"] },
+    { "date": "3 Mar 24", "events": ["Client Presentation", "Strategy Discussion"] },
+    { "date": "6 Mar 24", "events": ["Workshop on Leadership Skills", "Networking Lunch"] },
+    { "date": "9 Mar 24", "events": ["Product Demo Day", "Marketing Campaign Planning"] },
+    { "date": "12 Mar 24", "events": ["Conference on Digital Marketing", "Keynote Speech"] },
+    { "date": "15 Mar 24", "events": ["Seminar on Blockchain Technology", "Panel Discussion"] },
+    { "date": "18 Mar 24", "events": ["Hackathon", "Innovation Workshop"] },
+    { "date": "21 Mar 24", "events": ["Product Launch Event", "Press Release"] },
+    { "date": "24 Mar 24", "events": ["Data Science Bootcamp", "Guest Speaker Series"] },
+    { "date": "27 Mar 24", "events": ["Team Building Activities", "Happy Hour Social"] },
+    { "date": "30 Mar 24", "events": ["Tech Talk Series", "Q&A Session"] },
+    { "date": "1 Apr 24", "events": ["Project Wrap-up Meeting", "Celebratory Dinner"] },
+    { "date": "3 Apr 24", "events": ["Employee Appreciation Day", "Award Ceremony"] },
+    { "date": "6 Apr 24", "events": ["Company Retreat", "Team Building Exercises"] }
+  ]
+  

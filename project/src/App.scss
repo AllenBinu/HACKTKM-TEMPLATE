@@ -1,0 +1,364 @@
+$global-padding: 20px;
+
+$white: rgb(240,240,240);
+$black: rgb(20,20,20);
+$green: #388E3C;
+$blue: #1976D2;
+$orange: #F57C00;
+$purple: #7B1FA2;
+
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width:0;
+}
+
+body {
+  font-family: 'Muli', 'sans-serif';
+  background-image: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+
+}
+
+.timer {
+  position: fixed;
+  top: 0;
+  left: -$global-padding;
+  width: calc(75% + #{$global-padding});
+  height: 3px;
+  background-color: $white;
+  box-shadow: 0 1px 1px rgba($white, 0.5);
+  border-radius: 1px;
+  // animation: timer-anim 5s infinite linear;
+}
+
+@keyframes timer-anim {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }  
+}
+
+.notification {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: calc(50% - 125px);
+  transform: translateY(-60px);
+  background-color: $green;
+  color: $white;
+  width: 250px;
+  border-radius: 4px;
+  padding: $global-padding;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Title {
+  font-size: 20px;
+  color: $white;
+  padding-bottom: $global-padding;
+  margin-bottom: 0;
+  
+  border-bottom: 1px solid rgba($white, 0.2);
+  
+  .lnr {
+    margin-right: calc($global-padding / 2);
+  }
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: $global-padding;
+}
+
+.ConditionsGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.Conditions {
+  margin-top: $global-padding * 2;
+  color: $white;
+  font-size: 64px;
+}
+
+.Conditions--region {
+  display: none;
+}
+
+.Conditions-locationTitle {
+  font-weight: $font-semibold;
+  font-size: 24px;
+  
+  .lnr {
+    margin-right: calc($global-padding / 2);
+  }
+}
+
+.Conditions-container {
+  display: flex;
+}
+
+.Conditions-value {
+  flex-basis: 50%;
+  
+  label {
+    font-size: 16px;
+  }
+  
+  .number {
+    font-weight: $font-light;
+  }
+  
+  sup {
+    vertical-align: super;
+    font-size: 32px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CardGroup {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $global-padding;
+  margin-top: $global-padding * 2;
+  margin-bottom: $global-padding * 2;
+  border-bottom: 1px solid rgba($white, 0.2);
+}
+
+.CardGroup-title {
+  display: none;
+  color: $white;
+  margin-bottom: $global-padding * 2;
+  flex-basis: 100%;
+  font-weight: $font-semibold;
+  font-size: 24px;
+  
+  .lnr {
+    margin-right: calc($global-padding / 2);
+  }
+}
+
+.Card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: $global-padding;
+  margin-bottom: $global-padding;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0 4px 3px rgba($black, 0.2);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  
+  .Card-icon {
+    font-size: 20px;
+    line-height: 16px;
+  }
+  
+  .Card-status {
+    font-weight: $font-semibold;
+    margin-left: calc($global-padding / 2);
+  }
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 9px rgba($black, 0.2);
+    cursor: pointer;
+  }
+  
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 2px rgba($black, 0.2);
+  }
+}
+
+.Presets {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: $global-padding;
+  margin-bottom: $global-padding * 2;
+  border-bottom: 1px solid rgba($white, 0.2);
+}
+
+.Presets-title {
+  color: $white;
+  flex-basis: 100%;
+  margin-bottom: $global-padding * 2;
+  font-weight: $font-semibold;
+  font-size: 24px;
+  
+  .lnr {
+    margin-right: calc($global-padding/2);
+  }
+}
+
+.PresetCard {
+  position: relative;
+  background-color: $white;
+  border-radius: 4px;
+  flex-basis: calc(50% - $global-padding / 2);
+  margin-bottom: $global-padding;
+  margin-right: $global-padding;
+  padding: $global-padding;
+  text-align: center;
+  box-shadow: 0 4px 3px rgba($black, 0.2);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  
+  &:nth-of-type(even) {
+    margin-right: 0;
+  }
+  
+  .lnr {
+    display: block;
+    font-size: 32px;
+    margin-bottom: $global-padding;
+  }
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 9px rgba($black, 0.2);
+    cursor: pointer;
+  }
+  
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 2px rgba($black, 0.2);
+  }
+}
+
+.Testing {
+  padding-bottom: $global-padding;
+  margin-bottom: $global-padding * 2;
+  border-bottom: 1px solid rgba($white, 0.2);
+}
+
+.MessageLog {
+  color: $white;
+  margin-bottom: $global-padding * 2;
+  
+  p {
+    word-break: break-all;
+    margin-bottom: calc($global-padding / 4);
+  }
+}
+
+.MessageLog-title {
+  margin-bottom: $global-padding * 2;
+  font-weight: $font-semibold;
+  font-size: 24px;
+  
+  .lnr {
+    margin-right: calc($global-padding / 2);
+  }
+}
+
+.Button {
+  border: 0;
+  padding: $global-padding * 0.75 $global-padding;
+  margin-bottom: $global-padding;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 0 4px 3px rgba(20, 20, 20, 0.2);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 9px rgba($black, 0.2);
+    cursor: pointer;
+  }
+  
+  &:active, &:focus {
+    outline: none;
+  }
+  
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 2px rgba($black, 0.2);
+  }
+}
+
+@media (min-width: 768px) {
+  .ConditionsGroup {
+    flex-direction: row;
+    padding-bottom: $global-padding * 2;
+    margin-bottom: $global-padding * 2;
+    border-bottom: 1px solid rgba($white, 0.2);
+  }
+  
+  .Conditions {
+    width: 50%;
+  }
+  
+  .Conditions:nth-of-type(odd) {
+    margin-right: $global-padding;
+  }
+
+  .Conditions--region {
+    display: block;
+  }
+  
+  .CardGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .CardGroup-title {
+    display: block;
+  }
+  
+  .Card {
+    width: calc(50% - $global-padding / 2);
+  }
+  
+  .Card:nth-of-type(odd) {
+    margin-right: 20px;
+  }
+  
+  .PresetCard {
+    flex-basis: calc(25% - 15px);
+  
+    &:nth-of-type(even) {
+      margin-right: $global-padding;
+    }
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.status-on { color: $green; }
+.status-info { color: $blue; }
+.status-warning { color: $orange; }
+.status-default { color: $purple; }
+
+.show-notification {
+  transform: translateY($global-padding);
+}
+
+.panel{
+  background: #fff;
+  min-height: 275px;
+  width: 100%;
+}
+
+.monday{
+  color:red;
+}

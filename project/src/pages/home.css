@@ -1,0 +1,70 @@
+.home{
+    width:100dvw;
+    height:100dvh;
+}
+
+.icon{
+    max-width:200px;
+}
+
+.left{
+    background: hsl(0, 2%, 9%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+}
+
+
+
+.right{
+    background: url(/images/grass.jpg);
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.storage,.Market{
+    width:100%;
+    margin: 10px;
+    height:40px;
+    z-index:3;
+    background: #1d1c1c5b;
+    color: #eee;
+}
+
+.storage:hover{
+    background: #eee;
+    color:#000;
+}
+
+.Market:hover{
+    background: #eee;
+    color:#000;
+
+}
+
+.Market:hover .ner{
+    color: #000!important;
+} 
+
+
+.storage:hover .ner{
+    color: #000!important;
+} 
+
+.right::before{
+    content: "";
+    background: #0000004d;
+    position: absolute;
+    display: block;
+    width: 120%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
